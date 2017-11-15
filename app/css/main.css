@@ -50,7 +50,9 @@ body {
 
 @media (min-width: 320px) {
   .header_wrapper {
-    margin: 0 auto; } }
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px; } }
 
 @media (min-width: 992px) {
   .header_wrapper {
@@ -257,7 +259,9 @@ body {
   font-size: 0; }
   @media (min-width: 320px) {
     .forma_wrapper {
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding-left: 5px;
+      padding-right: 5px; } }
   @media (min-width: 992px) {
     .forma_wrapper {
       margin: 0 auto;
@@ -279,7 +283,7 @@ body {
 
 form {
   display: inline-block;
-  width: 300px;
+  width: 295px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 40px 40px 35px 30px;
@@ -362,6 +366,9 @@ form {
     text-align: center;
     padding-right: 0; } }
 
+.OurClasses {
+  margin-top: 122px; }
+
 .OurClasses_wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -379,7 +386,9 @@ form {
           align-content: stretch; }
   @media (min-width: 320px) {
     .OurClasses_wrapper {
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding-left: 5px;
+      padding-right: 5px; } }
   @media (min-width: 992px) {
     .OurClasses_wrapper {
       margin: 0 auto;
@@ -392,9 +401,31 @@ form {
       padding-left: 15px;
       padding-right: 15px; } }
 
+.OurClasses_title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: 'open_sansbold';
+  font-size: 30px;
+  color: #5b6ceb;
+  text-align: center;
+  text-transform: uppercase; }
+
+.OurClasses_undertitle {
+  display: block;
+  margin-bottom: 45px;
+  font-family: 'open_sansbold';
+  text-align: center;
+  font-size: 20px;
+  color: #929292; }
+
 .OurClasses_block {
   width: 48%;
-  font-size: 0; }
+  margin-top: 25px;
+  font-size: 0;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1); }
   .OurClasses_block .OurClasses_block_image {
     display: inline-block;
     vertical-align: top;
@@ -404,5 +435,36 @@ form {
     display: inline-block;
     vertical-align: top;
     width: 50%;
+    padding: 39px 30px;
     font-family: 'open_sansregular';
     font-size: 14px; }
+    .OurClasses_block .OurClasses_block_description h4 {
+      margin: 0;
+      font-family: 'open_sansbold';
+      font-size: 20px;
+      color: #777777; }
+    .OurClasses_block .OurClasses_block_description p {
+      margin: 0;
+      margin-top: 32px;
+      font-family: 'open_sansregular';
+      font-size: 14px;
+      color: #555555;
+      line-height: 1.571; }
+    .OurClasses_block .OurClasses_block_description span {
+      display: block;
+      margin-top: 15px;
+      font-family: 'open_sansregular';
+      font-size: 14px;
+      color: #999999;
+      line-height: 1.571; }
+
+@media (max-width: 1000px) {
+  .OurClasses_block {
+    width: 100%; } }
+
+@media (max-width: 500px) {
+  .OurClasses_block .OurClasses_block_image {
+    width: 100%; }
+  .OurClasses_block .OurClasses_block_description {
+    width: 100%;
+    text-align: center; } }
