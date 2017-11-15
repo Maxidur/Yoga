@@ -1,0 +1,32 @@
+.OurClasses_wrapper {
+	@include container;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: stretch;
+}
+
+.OurClasses_block {
+	width: 48%;
+	font-size: 0;
+
+	.OurClasses_block_image {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		overflow: hidden;
+	}
+
+	.OurClasses_block_description {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+
+		font-family: 'open_sansregular';
+		font-size: 14px;
+
+	}
+
+
+}

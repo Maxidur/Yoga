@@ -1,0 +1,28 @@
+@mixin container() {
+
+  @media (min-width: 320px ){ 
+    margin: 0 auto;
+  }
+
+   @media (min-width: 992px){
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px 
+  }
+
+  @media (min-width: 1250px){
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@mixin clearfix() {
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

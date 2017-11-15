@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@import "normalize";
+@import "mixins";
+@import "fonts";
+@import "header";
+@import "forma";
+@import "ourClasses";
+
