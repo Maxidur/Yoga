@@ -12,6 +12,7 @@ body {
 @import "header";
 @import "forma";
 @import "ourClasses";
+@import "effects";
 
 // Gallery
 
@@ -89,6 +90,25 @@ body {
 	}
 
 }
+
+// media
+
+@media (max-width: 1000px) {
+	.gallery_block {
+		width: 100%
+	}
+}
+
+@media (max-width: 400px) {
+	.gallery_block {
+
+		.gallery_block_image {
+			width: 100%;
+		}
+
+	}
+}
+
 
 
 

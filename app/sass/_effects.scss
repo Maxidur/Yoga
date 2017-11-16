@@ -1,0 +1,93 @@
+@import "sprite";
+
+.effects {
+	padding-top: 65px;
+	padding-bottom: 130px;
+
+	background-image: url(../images/effects.jpg);
+	background-size: cover;
+
+	.effects_wrapper {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-content: stretch;
+
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		@include container;
+	}
+}
+
+.effects_block:nth-child(4n) {
+	margin-right: 0;
+}
+
+.effects_block {
+	width: 270px;
+	margin-top: 55px;
+	margin-right: 30px; 
+
+	text-align: center;
+
+
+	.effects_img {
+		display: inline-block;
+		vertical-align: top;
+		width: 70px;
+		height: 70px;
+		border: 2px solid #ffffff;
+
+		border-radius: 50%;
+
+		i {
+			display: inline-block;
+			width: 48px;
+			height: 70px;
+		}
+	}
+
+	.effects_title {
+		margin: 0;
+		margin-top: 32px;
+		margin-bottom: 22px;
+
+		font-family: 'open_sansbold';
+		font-size: 18px;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+
+	.effects_description {
+		margin: 0;
+
+		font-family: 'open_sansregular';
+		font-size: 16px;
+		color: #ffffff;
+	}
+}
+
+// media 
+@media (max-width: 1216px) {
+
+	.effects_block:nth-child(4n) {
+	margin-right: 30px;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.effects_block:nth-child(4n) {
+		margin-right: 8px;;
+	}
+
+	.effects_block {
+		margin-right: 8px;
+		margin-left: 8px;
+	}
+
+}
+

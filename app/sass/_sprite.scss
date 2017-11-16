@@ -1,0 +1,66 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-body {
+  background-image: url(../images/icons/sprite.png);
+  background-position: -452px -434px;
+  width: 48px;
+  height: 36px;
+}
+.icon-bones {
+  background-image: url(../images/icons/sprite.png);
+  background-position: -290px -280px;
+  width: 19px;
+  height: 51px;
+}
+.icon-eyes {
+  background-image: url(../images/icons/sprite.png);
+  background-position: -140px -131px;
+  width: 43px;
+  height: 25px;
+}
+.icon-heart {
+  background-image: url(../images/icons/sprite.png);
+  background-position: -222px -197px;
+  width: 39px;
+  height: 31px;
+}
+.icon-human {
+  background-image: url(../images/icons/sprite.png);
+  background-position: -539px -518px;
+  width: 48px;
+  height: 53px;
+}
+.icon-love {
+  background-image: url(../images/icons/sprite.png);
+  background-position: 10px 16px;
+  width: 28px;
+  height: 36px;
+}
+.icon-sleep {
+  background-image: url(../images/icons/sprite.png);
+  background-position: -61px -62px;
+  width: 34px;
+  height: 34px;
+}
+.icon-sport {
+  background-image: url(../images/icons/sprite.png);
+  background-position: -363px -359px;
+  width: 49px;
+  height: 33px;
+}
