@@ -26,6 +26,15 @@ $(window).resize(function(){
 	listDisplay();
 })
 
+// slider_aboutUs
+
+$(document).ready(function(){
+  $(".owl-carousel.aboutUs_carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+  });
+});
 
 
 
