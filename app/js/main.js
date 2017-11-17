@@ -36,6 +36,45 @@ $(document).ready(function(){
   });
 });
 
+// slider trainer
+$(document).ready(function(){
+  $(".owl-carousel.shop_carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: false,
+    animateOut: "fadeOutUp",
+    animateIn: "fadeInDown"
+  });
+});
+
+$(document).ready(function(){
+  $(".owl-carousel.trainer_carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,    
+  });
+});
+
+
+
+
+// shop buttom hover
+
+$(".shop_buttom").hover(
+  function() {
+    var target = $(this).parent().children();  
+    $(target[0]).css("background-color","#161e5d");
+  },
+  function() {
+    var target = $(this).parent().children();
+    $(target[0]).css("background-color","#5b6ceb");
+  }
+  );
+
+
+
+
+
 
 
 
