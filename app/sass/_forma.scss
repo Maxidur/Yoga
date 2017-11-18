@@ -34,8 +34,11 @@ form {
 	text-align: left;
 	background-color: white;
 
+	@include clearfix;
+
 	span {
 		display: block;
+		padding-bottom: 14px;
 
 		font-family: 'open_sanssemibold';
 		font-size: 25px;
@@ -43,17 +46,20 @@ form {
 		
 	}
 
-	input:first-of-type {
-		margin-top: 30px;
+	.input_wrapper {
+		position: relative;
+
+		display: block;
 	}
 
 	input {
 		width: 100%;
-		display: block;
 		margin-top: 17px;
+		display: block;
 		padding: 18px 0;
 		padding-left: 10px;
 
+		font-family: 'open_sansregular';
 		font-size: 14px;
 		color: #888888;
 
@@ -64,21 +70,8 @@ form {
 		background-color: #f2f2f2;
 	}
 
-	select {
-		width: 100%;
-		display: block;
-		margin-top: 17px;
-		padding: 18px 0;
-		border: none;
-		outline: none;
-
-		font-size: 14px;
-		color: #888888;
-
-		background-color: #f2f2f2;
-	}
-
-	buttom {
+	.buttom {
+		float: right;
 		display: inline-block;
 		width: 170px;
 		padding: 17px 8px;
@@ -93,6 +86,15 @@ form {
 		outline: none;
 		border-radius: 6px;
 		-webkit-appearance: normal;
+
+		transition-property: background-color;
+		transition-duration: 0.5s;
+		transition-timing-function: ease;
+
+		&:hover {
+			background-color: #161e5d;
+			cursor: pointer;
+		}
 
 	}
 
@@ -115,6 +117,25 @@ form {
 	p {
 		font-size: 40px;
 	} 
+}
+
+// validate
+
+#name-error, #telefon-error{
+  position: absolute;
+  right: -32px;
+  top: 50%;
+  margin-top: -13px;
+  width: 26px;
+  height: 26px;
+  background: url("../images/icons/no-valid.png");
+}
+
+#name-error.error.valid, #telefon-error.error.valid {
+ position: absolute;
+ width: 26px;
+ height: 26px;
+ background: url("../images/icons/valid.png");
 }
 
 // media

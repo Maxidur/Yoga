@@ -11,19 +11,19 @@
 		<div class="header_wrapper">
 			<div class="header_container">
 				<h1 class="header_logo">
-					<img src="images/logo.svg" alt="logo">
+					<img src="images/logo.png" alt="logo">
 					<a href="#">yoga</a>
 				</h1>
 				<buttom class="buttom_menu close"><span></span></buttom>	
-				<ul class="header_leftMenu list">
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Reservation</a></li>
-					<li><a href="#">Gallery</a></li>					
+				<ul id="menuLeft" class="header_leftMenu list">
+					<li><a href="#aboutUs">About us</a></li>
+					<li><a href="#reservation">Reservation</a></li>
+					<li><a href="#gallery">Gallery</a></li>					
 				</ul>
-				<ul class="header_rightMenu list">
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Elements</a></li>
-					<li><a href="#">Shop</a></li>										
+				<ul id="menuRight" class="header_rightMenu list">
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#elements">Elements</a></li>
+					<li><a href="#shop">Shop</a></li>										
 				</ul>
 			</div>
 		</div>
@@ -32,16 +32,21 @@
 		<section class="forma">
 			<div class="forma_wrapper">
 				<div class="forma_main">
-					<form action="">
+					<form action="//yaga" method="post">
 						<span class="form_title">Trial Class</span>
-						<input type="text" placeholder="Enter your name" />
-						<input type="text" placeholder="Enter your phone" />
-						<select>
-							<option value="class1">Chose your class</option>
-							<option value="class2">name</option>
-							<option value="class3">firstname</option>
+						<label class="input_wrapper">
+							<input name="name" type="text" placeholder="Enter your name" required />
+						</label>
+						<label class="input_wrapper">
+							<input name="telefon" type="text" placeholder="Enter your phone" required />
+						</label>
+						<select name="select">
+							<option value="class1">Yoga for Health</option>
+							<option value="class2">Yoga for lose Weight</option>
+							<option value="class3">Yoga for Children</option>
+							<option value="class4">Youga for Elderly</option>
 						</select>
-						<buttom type="submit">Try it</buttom>
+						<input class="buttom" name="submit" type="submit" value="Try it"/>
 					</form>
 				</div>
 				<div class="forma_title">
@@ -50,7 +55,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="OurClasses">
+		<section id="reservation" class="OurClasses">
 			<h3 class="OurClasses_title">Yoga FEATURE PROGRAM</h3>	
 			<span class="OurClasses_undertitle">Our Classes</span>
 			<div class="OurClasses_wrapper">
@@ -69,7 +74,7 @@
 						<img src="images/YogaFuture_2.jpg" alt="">
 					</div>
 					<div class="OurClasses_block_description">
-						<h4>Yoga For Health</h4>
+						<h4>Yoga for lose Weight</h4>
 						<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
 						<span>Ashtanga - Hatha</span>
 					</div>
@@ -79,7 +84,7 @@
 						<img src="images/YogaFuture_3.jpg" alt="">
 					</div>
 					<div class="OurClasses_block_description">
-						<h4>Yoga For Health</h4>
+						<h4>Yoga for Children</h4>
 						<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
 						<span>Ashtanga - Hatha</span>
 					</div>
@@ -89,14 +94,14 @@
 						<img src="images/YogaFuture_4.jpg" alt="">
 					</div>
 					<div class="OurClasses_block_description">
-						<h4>Yoga For Health</h4>
+						<h4>Youga for Elderly</h4>
 						<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
 						<span>Ashtanga - Hatha</span>
 					</div>
 				</section>
 			</div>		
 		</section>
-		<section class="gallery">
+		<section id="gallery" class="gallery">
 			<div class="gallery_wrapper">
 				<div class="gallery_block">
 					<div class="gallery_block_image">
@@ -152,7 +157,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="aboutUs">
+		<section id="aboutUs" class="aboutUs">
 			<div class="aboutUs_wrapper">
 				<div class="aboutUs_description">
 					<h5>About us</h5>
@@ -168,7 +173,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="effects">
+		<section id="elements" class="effects">
 			<ul class="effects_wrapper">
 				<li class="effects_block">
 					<span class="effects_img"><i class="icon-heart"></i></span>
@@ -212,7 +217,7 @@
 				</li>																		
 			</ul>
 		</section>
-		<section class="shop">
+		<section id="shop" class="shop">
 			<div class="shop_wrapper1">
 				<div class="shop_block">
 					<div class="shop_price">
@@ -248,7 +253,7 @@
 					<buttom class="shop_buttom">Buy now</buttom>
 				</div>
 			</div>
-			<div class="shop_wrapper2">
+			<div id="blog" class="shop_wrapper2">
 				<div class="owl-carousel shop_carousel">
 					<div class="shop_carousel_item">
 						<div class="shop_carousel_image">

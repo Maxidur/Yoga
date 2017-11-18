@@ -26,6 +26,37 @@ $(window).resize(function(){
 	listDisplay();
 })
 
+// style select
+
+$(document).ready(function(){
+    $("select").selecter({
+      label: "Chose your class"
+    });
+});
+
+// jq validate
+
+ jQuery.validator.setDefaults({
+   debug: true,
+  success: "valid"
+ });
+
+$("form").validate({
+  rules: {
+    name: {
+      required: true,
+      maxlength: 20
+    },
+
+    telefon: {
+      required: true,
+      number: true,
+      maxlength: 12
+    }
+  }
+});
+
+
 // slider_aboutUs
 
 $(document).ready(function(){
@@ -70,6 +101,42 @@ $(".shop_buttom").hover(
     $(target[0]).css("background-color","#5b6ceb");
   }
   );
+
+// menu scrolling
+$(document).ready(function() {
+
+   $("#menuLeft").on("click","a", function(event) {
+    event.preventDefault();
+
+    if($(window).width() < 797) {
+        $(".buttom_menu").trigger("click");
+      };
+    
+
+    var id = $(this).attr("href");
+    var top = $(id).offset().top;
+
+    $("body,html").animate({scrollTop: top}, 1500);
+  });
+
+   $("#menuRight").on("click","a", function(event) {
+    event.preventDefault();
+
+    if($(window).width() < 797) {
+        $(".buttom_menu").trigger("click");
+      };
+
+    $(".buttom_menu").removeClass("active");
+
+    var id = $(this).attr("href");
+    var top = $(id).offset().top;
+
+    $("body,html").animate({scrollTop: top}, 1500);
+  });
+
+});
+
+
 
 
 
