@@ -202,6 +202,14 @@
 					text-align: center;
 					padding-right: 0;
 					padding-bottom: 25px;
+
+					a {
+						color: #ffffff;
+
+						&:hover {
+							color: #000000;
+						}
+					}
 				}
 			}
 

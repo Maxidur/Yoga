@@ -12,7 +12,7 @@ $(".buttom_menu").click(function(){
   });
 
 function listDisplay() {
-	if($(window).width() > 814) {
+	if($(window).width() > 797) {
 		$(".list").css("display","block");	
 	} else {
 		$(".list").css("display","none");
