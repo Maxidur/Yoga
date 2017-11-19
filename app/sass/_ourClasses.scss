@@ -25,10 +25,12 @@
 
 .OurClasses_undertitle {
 	display: block;
-	margin-bottom: 45px;
-	font-family: 'open_sansbold';
+	margin-bottom: 37px;
+
+	
+	font-family: 'FreestyleScript-Regular';
 	text-align: center;
-	font-size: 20px;
+	font-size: 40px;
 	color: #929292;
 
 }
@@ -116,6 +118,10 @@
 			width: 100%;
 
 			text-align: center;
+
+			h4 {
+				padding-right: 36px;
+			}
 		}
 
 	}

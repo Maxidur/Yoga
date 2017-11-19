@@ -25,12 +25,6 @@ body {
   font-style: normal; }
 
 @font-face {
-  font-family: 'open_sanslight_italic';
-  src: url("../fonts/opensans-lightitalic-webfont.woff2") format("woff2"), url("../fonts/opensans-lightitalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'open_sansregular';
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
@@ -47,6 +41,21 @@ body {
   src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'FreestyleScript-Regular';
+  src: url("../fonts/FreestyleScript-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FreestyleScript-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+header {
+  min-height: 100px; }
+  header .fixed {
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 100;
+    width: 100%; }
 
 @media (min-width: 320px) {
   .header_wrapper {
@@ -84,7 +93,7 @@ body {
     position: relative;
     z-index: 15;
     margin: 0;
-    margin: 16px 0;
+    margin: 12px 0;
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
         -ms-flex-order: 2;
@@ -105,13 +114,15 @@ body {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
       -ms-flex-order: 1;
-          order: 1; }
+          order: 1;
+  padding-left: 12%; }
 
 .header_wrapper .header_rightMenu {
   -webkit-box-ordinal-group: 4;
   -webkit-order: 3;
       -ms-flex-order: 3;
           order: 3;
+  padding-right: 12%;
   text-align: right; }
 
 .header_leftMenu, .header_rightMenu {
@@ -220,6 +231,12 @@ body {
   padding-top: 115px;
   background: rgba(88, 107, 245, 0.6); }
 
+@media (max-width: 1300px) {
+  .header_container .header_leftMenu {
+    padding-left: 0; }
+  .header_container .header_rightMenu {
+    padding-right: 0; } }
+
 @media (max-width: 814px) {
   .header_wrapper .header_container {
     -webkit-box-pack: justify;
@@ -302,7 +319,7 @@ form {
   width: 295px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 40px 40px 35px 30px;
+  padding: 40px 40px 18px 30px;
   -webkit-border-radius: 20px;
           border-radius: 20px;
   font-family: 'open_sansregular';
@@ -314,7 +331,6 @@ form {
     clear: both; }
   form span {
     display: block;
-    padding-bottom: 14px;
     font-family: 'open_sanssemibold';
     font-size: 25px;
     color: #5363db; }
@@ -340,7 +356,7 @@ form {
     display: inline-block;
     width: 170px;
     padding: 17px 8px;
-    margin-top: 30px;
+    margin-top: 17px;
     text-align: center;
     font-size: 16px;
     color: #ffffff;
@@ -367,14 +383,19 @@ form {
   display: inline-block;
   vertical-align: top;
   width: 50%;
+  margin-top: 65px;
   padding-left: 45px;
   text-align: left;
   color: #ffffff; }
   .forma_title h2 {
+    margin: 0;
     font-family: 'open_sansbold';
-    font-size: 48px; }
+    font-size: 48px;
+    text-transform: uppercase; }
   .forma_title p {
-    font-size: 40px; }
+    font-family: 'FreestyleScript-Regular';
+    font-size: 40px;
+    line-height: 1.2; }
 
 #name-error, #telefon-error {
   position: absolute;
@@ -453,10 +474,10 @@ form {
 
 .OurClasses_undertitle {
   display: block;
-  margin-bottom: 45px;
-  font-family: 'open_sansbold';
+  margin-bottom: 37px;
+  font-family: 'FreestyleScript-Regular';
   text-align: center;
-  font-size: 20px;
+  font-size: 40px;
   color: #929292; }
 
 .OurClasses_block {
@@ -511,7 +532,9 @@ form {
     width: 100%; }
   .OurClasses_block .OurClasses_block_description {
     width: 100%;
-    text-align: center; } }
+    text-align: center; }
+    .OurClasses_block .OurClasses_block_description h4 {
+      padding-right: 36px; } }
 
 /*
 Icon classes can be used entirely standalone. They are named after their original file names.
@@ -977,6 +1000,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
       width: 100px;
       height: 1px;
       background-color: #d7d7d7; }
+    .shop_list li:last-child::after {
+      display: none; }
 
 @media (max-width: 800px) {
   .shop_wrapper1 {
@@ -1043,7 +1068,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   vertical-align: top;
   width: 56%;
   margin-top: 50px;
-  font-family: 'open_sanslight_italic';
+  font-family: 'open_sansitalic';
   font-size: 14px;
   color: #555555;
   line-height: 1.571; }

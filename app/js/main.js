@@ -73,8 +73,6 @@ $(document).ready(function(){
     items: 1,
     loop: true,
     nav: false,
-    animateOut: "fadeOutUp",
-    animateIn: "fadeInDown"
   });
 });
 

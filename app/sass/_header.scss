@@ -1,3 +1,14 @@
+header {
+	min-height: 100px;
+
+	.fixed {
+ 		position: fixed;
+ 		top: 0;
+ 		background-color: #ffffff;
+ 		z-index: 100;
+ 		width: 100%;
+	}
+}
 
 
 .header_wrapper {
@@ -13,7 +24,7 @@
 			position: relative;
 			z-index: 15;
 			margin: 0;
-			margin: 16px 0; 
+			margin: 12px 0; 
 
 			order: 2;
 
@@ -38,10 +49,14 @@
 
 		.header_leftMenu {
 			order: 1;
+
+			padding-left: 12%
 		}
 
 		.header_rightMenu {
 			order: 3;
+
+			padding-right: 12%;
 
 			text-align: right;
 		}
@@ -172,6 +187,19 @@
 
 
 // media
+
+@media (max-width: 1300px) {
+	.header_container {
+		.header_leftMenu {
+			padding-left: 0;
+		}
+
+		.header_rightMenu {
+			padding-right: 0;
+		}
+
+	}
+}
 
 @media (max-width: 814px) {
 	.header_wrapper{
